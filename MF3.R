@@ -101,7 +101,7 @@ print(heatmap_list[[1]]+heatmap_list[[2]]+heatmap_list[[3]]+heatmap_list[[4]]+he
 dev.off()
 
 ###Region Protein
-load("/PBA/ProteinBatchData.RData")
+load("/home/wangzm/Project/PBA/original_data/PBAtlas/PBA_proteins/new_20241227/ProteinBatchData.RData")
 expr = batch_data
 meta = pmeta
 
