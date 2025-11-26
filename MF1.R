@@ -15,7 +15,7 @@ samples$Age_numeric <- as.numeric(factor(samples$Age, levels = age_levels, order
 table(samples$Age_numeric)
 str(samples$Age_numeric)
 
-pdf("/PBA/MF1_B.curve.pdf",height = 6,width = 6)
+pdf("/home/wangzm/Project/PBA/MainFigure/graphs/MF1/MF1_B.curve.pdf",height = 6,width = 6)
 p <- ggplot(data = samples, aes(x = Days, y = Brain_weight, color = Age)) +
   geom_point(aes(shape = Sex), size = 4) +
   scale_color_manual(values = c('#f3993a','#ffee6f','#add5a2','#7a7b78','#9933cc','#0066ff','#33cccc','#ff66cc'),limits = age_levels) +
@@ -55,7 +55,7 @@ p <- ggplot(data = samples, aes(x = Days, y = Ratio, color = Age)) +
         plot.title = element_text(hjust = 0.5, face = "bold"),
         axis.title.x = element_text(face = "bold"),
         axis.title.y = element_text(face = "bold"),
-        panel.grid = element_blank(),
+        panel.grid = element_blank(), # 隐藏所有网格线
         axis.line = element_line(colour = "black", size = 0.6),
         axis.ticks = element_line(colour = "black", size = 0.6),
         axis.text = element_text(colour = "black", size = 10)) +
