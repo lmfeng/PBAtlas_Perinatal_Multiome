@@ -11,11 +11,11 @@ set.seed(100)
 age_ref <- c("E76","E85","E94","E104","E109","P0","P3","P30")
 reg_ref <- c("PFC","TMP","OCC","STR","THA","HIP","CERE")
 
-load("/PBA/PBAtlas.geneExpr.norm.RData")
+load("/home/wangzm/Project/PBA/basic_analysis/MF5_related/PBAtlas.geneExpr.norm.RData")
 gexpr.g = gexpr
 meta.g = meta
 
-load("/PBA/PBAtlas.proteinExpr.norm.RData")
+load("/home/wangzm/Project/PBA/basic_analysis/MF5_related/PBAtlas.proteinExpr.norm.RData")
 gexpr.p = combat_edata1
 meta.p = meta
 
