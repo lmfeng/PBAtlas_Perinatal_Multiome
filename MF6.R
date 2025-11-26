@@ -139,4 +139,3 @@ ht5 <- Heatmap(calcor.adult, name = "Adult", col = col_fun, cluster_rows = FALSE
 
 par(omi = c(0.1, 0.1, 0.1, 0.1))
 ht1 + ht2 + ht3 + ht4 + ht5
-
