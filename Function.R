@@ -113,7 +113,7 @@ ProcessDEanalysisResult_sRdA_TRG <- function(region,data_type,pv_cut,fc_cut,age_
 }
 
 get_ct_related_hcdvg <- function(region, dvg_genes) {
-  spec_path <- "/PBA/deconvolution/"
+  spec_path <- "/home/wangzm/Project/PBA/basic_analysis/deconvolution/"
   reg_spec_path <- paste0(spec_path, region, "/", tolower(region), "_hum.spec.xls")
   reg_spec <- read.table(reg_spec_path, header = TRUE, sep = '\t', row.names = 1)
   
